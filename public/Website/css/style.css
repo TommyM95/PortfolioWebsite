@@ -1,0 +1,320 @@
+/*#region Font import*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+/*#endregion*/
+* { margin: 0;}
+:root{
+    --blue-rgb: 25 100 243;
+    --green-rgb: 1 243 22;
+    --lightblue-rgb: 186 243 241;
+    --purple-rgb: 186 1 241;
+    --primary-rgb: var( --purple-rgb);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+p{
+    font-family: 'Roboto', serif;
+    color: hsl(2, 100%, 100%);
+}
+
+/*#region Header*/
+
+header{
+    font-family: 'Roboto', serif;
+    font-style: normal;
+}
+
+/*#region Navigation Bar*/
+.navbar {
+    position: sticky;
+    top: 0;
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    display: flex;
+    justify-content: space-around;
+    /*background: hsl(2, 100%, 100%) conic-gradient(*/
+    /*        from 0deg at 25% 360%,*/
+    /*        lightblue,*/
+    /*        lightpink,*/
+    /*        lightblue,*/
+    /*        lightblue);*/
+    background: #040615;
+    padding: 1rem;
+    z-index: 11;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    border: 1px solid purple;
+}
+a {
+    box-shadow: inset 0 0 0 0 yellow;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+.navbar a:hover {
+    color: black;
+    box-shadow: inset 500px 0 0 0 darkorange;
+}
+/*#endregion*/
+
+/*#endregion*/
+
+/*#region Body*/
+#Home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+    margin-bottom:65vh;
+}
+.Hello{
+    font-family: 'Roboto', serif;
+    color: hsl(2, 100%, 100%);
+    font-size: 100px;
+    text-align: center;
+    text-justify: inter-word;
+    text-shadow: #e0e0e0 1px 1px 0
+}
+.Welcome{
+    font-family: 'Roboto', serif;
+    color: hsl(2, 100%, 100%);
+    font-size: 28px;
+    text-align: center;
+    text-shadow: #e0e0e0 1px 1px 0;
+}
+.AboutMe{
+    font-family: 'Roboto', serif;
+    color: hsl(2, 100%, 100%);
+    font-size: 56px;
+    text-align: center;
+    text-shadow: #e0e0e0 1px 1px 0;
+    display: flex;
+    justify-content: center;
+}
+.AboutMeContent {
+    font-family: 'Roboto', serif;
+    color: hsl(2, 100%, 100%);
+    font-size: 24px;
+    text-align: center;
+    text-shadow: #e0e0e0 1px 1px 0;
+    display: flex;
+    justify-content: center;
+
+}
+#About{
+
+    display: flex;
+    justify-content: center;
+    margin-left: 25vw;
+    max-width: 50vw;
+    padding-top: 11rem;
+    margin-bottom:65vh;
+}
+#Projects{
+    padding-top: 11rem;
+    text-align: center;
+    text-justify: inter-word;
+    margin-bottom:65vh;
+}
+
+body{
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    background: #040615;
+}
+.backgroundColour{
+    background: #040615;
+}
+#CVTable{
+    font-family: 'Roboto', serif;
+    font-style: normal;
+    color: hsl(2, 100%, 100%);
+}
+
+/*#region Cards*/
+.card-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    perspective: 1000px;
+    height: 400px;
+    width: 250px;
+    border: 3px solid rgb(var(--primary-rgb) / 80%);
+    aspect-ratio: 10/16;
+    border-radius: 1rem;
+    background-color: rgb(var(--primary-rgb)/ 15%);
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    margin: 1em;
+    box-shadow: rgba(88, 40, 150, 50.2) 0 50px 100px -20px, rgba(255, 255, 255, 0.3) 0 30px 60px -30px;
+    transform-style: preserve-3d;
+    scale: 100%;
+    transition: transform 0.5s;
+
+}
+.card:hover {
+    transform: rotateX(10deg) rotateY(10deg);
+    scale: 110%;
+    transition: scale 750ms;
+}
+.card:hover .card-content {
+
+    transform: none;
+}
+@keyframes pan-overlay {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 0 -100%;
+    }
+}
+.card-overlay {
+    background: linear-gradient(
+            rgb(var(--primary-rgb) / 0.15),
+            rgb(var(--primary-rgb) / 0.15) 8px,
+            transparent 3px,
+            transparent 9px
+    );
+    height: 100%;
+    width: 100%;
+    background-size: 100% 9px;
+    animation: pan-overlay 22s infinite linear;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+}
+@keyframes pan-image {
+    0% {
+        background-position: 36% 55%;
+        background-size: 500%;
+    }
+
+    20% {
+        background-position: 30% 35%;
+        background-size: 300%;
+    }
+
+    20.0001% { /* -- View 2 -- */
+        background-position: 60% 85%;
+        background-size: 500%;
+    }
+
+    40% {
+        background-position: 49% 81%;
+        background-size: 500%;
+    }
+
+    40.0001% { /* -- View 3 -- */
+        background-position: 80% 42%;
+        background-size: 300%;
+    }
+
+    60% {
+        background-position: 84% 33%;
+        background-size: 300%;
+    }
+
+    60.0001% { /* -- View 4 -- */
+        background-position: 0 0;
+        background-size: 300%;
+    }
+
+    80% {
+        background-position: 15% 4%;
+        background-size: 300%;
+    }
+
+    80.0001% { /* -- View 5 -- */
+        background-position: 80% 10%;
+        background-size: 300%;
+    }
+
+    100% {
+        background-position: 72% 14%;
+        background-size: 300%;
+    }
+}
+.card > .card-image{
+    background-image: url("../assets/images/hons_reception.png");
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-size: 200%;
+    background-position: 0 0;
+    opacity: .9;
+    animation: pan-image 15s linear infinite;
+}
+.card > .card-image2{
+    background-image: url("../assets/images/Bean-Beetle.png");
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-size: 100%;
+    background-position: 0 0;
+
+    opacity: .9;
+    animation: pan-image 15s linear infinite;
+}
+.card > .card-content {
+    font-family: Roboto, serif;
+    color: whitesmoke;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    gap: 4rem;
+    position: relative;
+    z-index: 3;
+    margin: 1rem;
+    scale: 50%;
+    opacity: 0;
+    padding-bottom: 6rem;
+    border: 1px solid rgb(var(--primary-rgb) / 50%);
+    border-radius: 0.6rem;
+    transition: scale 250ms, opacity 400ms;
+    backface-visibility: hidden;
+}
+.card-content:hover{
+    scale: 100%;
+    opacity: 1;
+    transform: rotateX(10deg) rotateY(10deg);
+}
+/*#endregion*/
+
+/*#endregion*/
+/*** footer **********************************************************************/
+#footer{
+    margin-top: 30px;
+    text-align: center;
+    padding: 50px 10%;
+    color: #FFFFFF;
+}
+.hr3 {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #CCC, transparent);
+}
