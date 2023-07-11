@@ -79,7 +79,7 @@ $table_active_row_bg: rgba(255,255,255,0.1);
     width: 100%;
     margin: 0 auto;
     max-width: 95%;
-    margin: 0 auto;
+
     padding: .6em 1em;
     border-radius: .6em;
     background-color: $table_header_bg;
@@ -105,11 +105,13 @@ $table_active_row_bg: rgba(255,255,255,0.1);
   width: 100%;
   max-width: 800px;
   min-width: 500px;
-  background: #f1f1f1;
+  background-color: $table_bg;
   top: 5rem;
   margin: 0 auto 5em;
   align-items: center;
   justify-content: center;
+  border-radius: 0.7rem;
+  color: #f1f1f1;
   .Contact-Form{
     display: flex;
     flex-direction: column;
@@ -117,5 +119,6 @@ $table_active_row_bg: rgba(255,255,255,0.1);
     max-width: 600px;
     width: 80%;
     border-radius: .6em;
+
   }
 }
