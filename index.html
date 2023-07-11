@@ -164,11 +164,25 @@
 <section id="Contact">
 <div class="Form-Container">
     <form action="https://formsubmit.co/00c29354410b3590cb5852107366376a" method="POST" class="Contact-Form">
+        <!--honeyPot-->
+        <label>
+            <input type="text" name="_honey" style="display: none;">
+        </label>
+        <!--Disable Captcha-->
+        <input type="hidden" name="_captcha" value="false">
         <h2>Contact Me</h2>
+        <label for="name" class="form-label">Name</label>
         <input type="text" name="name" id="name" placeholder="Your Name" required>
+
+        <label for="email" class="form-label">Email</label>
         <input type="email" name="email" id="email" placeholder="Your Email" required>
-        <input type="text" name="phone" id="text" placeholder="Phone" >
-        <textarea type="text" name="message" id="message" rows="10" placeholder="Enter your message here"></textarea>
+
+        <label for="phone" class="form-label">Phone</label>
+        <input type="text" name="phone" id="phone" placeholder="Phone" >
+
+        <label for="comments" class="form-label">Message</label>
+        <textarea name="comments, questions" id="comments" rows="10" placeholder="Enter your message here"></textarea>
+
         <button type="submit">Send Message</button>
     </form>
 </div>
