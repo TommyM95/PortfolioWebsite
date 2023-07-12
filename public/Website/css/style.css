@@ -305,7 +305,62 @@ body{
 }
 /*#endregion*/
 
+.ProjectContent-Container{
+    display: flex;
+    margin: 10vh 10vw;
+    width: 80%;
+    height: 40vh;
+    background-color: #f1f1f1;
+}
+.P-Details{
+    width: 30%;
+    height:100%;
+    background-color: #7C378D;
+}
+.P-image{
+    width: 70%;
+    max-width: 1280px;
+    max-height: 720px;
+    background-color: #5601F1;
+    display: flex;
+    justify-content: center;
+}
+.P-image > img{
+    object-fit: contain;
+    object-position: center;
+}
+
+.projectDetailSection{
+    margin-top:5%;
+    height: fit-content;
+    padding: 50px 10%;
+    text-align: center;
+    background-color: #0e151f;
+    color: #FFFFFF;
+    max-height:100%;
+    max-width:100%;
+    display: inline-block;
+    /*margin-bottom: 600px;*/
+}
+
+.projectDetailSection_child{
+
+    max-height:100%;
+    max-width:100%;
+    height: auto;
+    width: 50%;
+    float: left;
+}
+.projectDetailSection_child img{
+    display: inline-block;
+    max-height:100%;
+    max-width:100%;
+    height: auto;
+    width: auto;
+}
+
 /*#endregion*/
+
 /*** footer **********************************************************************/
 #footer{
     margin-top: 30px;
@@ -318,7 +373,7 @@ body{
     height: 2px;
     background-image: linear-gradient(to right, transparent, #CCC, transparent);
 }
-
+/*#region Form Submit Btn*/
 /* 4 */
 .btn-4 {
     background-image: linear-gradient(315deg, #5601F1 0%, #7C378D 74%);
@@ -391,3 +446,4 @@ body{
 .btn-4 span:hover:after {
     width: 100%;
 }
+/*#endregion*/
