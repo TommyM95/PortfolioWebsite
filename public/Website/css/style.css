@@ -106,7 +106,12 @@ a {
     text-shadow: #e0e0e0 1px 1px 0;
     display: flex;
     justify-content: center;
+    text-justify: newspaper;
+    text-align: justify;
 
+}
+.AboutMeContent > img{
+    object-fit: contain;
 }
 #About{
 
