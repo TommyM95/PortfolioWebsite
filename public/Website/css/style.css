@@ -89,38 +89,40 @@ a {
     text-align: center;
     text-shadow: #e0e0e0 1px 1px 0;
 }
-.AboutMe{
+#About{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin-left: 25vw;
+    max-width: 50vw;
+    padding-top: 11rem;
+    margin-bottom:65vh;
+}
+.AboutMeTitle > h1{
     font-family: 'Roboto', serif;
     color: hsl(2, 100%, 100%);
-    font-size: 56px;
+    font-size: 100px;
     text-align: center;
-    text-shadow: #e0e0e0 1px 1px 0;
-    display: flex;
-    justify-content: center;
+    text-justify: inter-word;
 }
 .AboutMeContent {
     font-family: 'Roboto', serif;
-    color: hsl(2, 100%, 100%);
     font-size: 24px;
     text-align: center;
     text-shadow: #e0e0e0 1px 1px 0;
     display: flex;
     justify-content: center;
     text-justify: newspaper;
-    text-align: justify;
 
 }
-.AboutMeContent > img{
-    object-fit: contain;
-}
-#About{
 
+.AboutMeImg{
     display: flex;
-    justify-content: center;
-    margin-left: 25vw;
-    max-width: 50vw;
-    padding-top: 11rem;
-    margin-bottom:65vh;
+}
+.AboutMeTitle{
+    width: 100%;
+    font-family: 'Roboto', serif;
+    margin-bottom: 30px;
 }
 #Projects{
     padding-top: 11rem;
