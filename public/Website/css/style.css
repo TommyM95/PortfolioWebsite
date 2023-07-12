@@ -271,9 +271,8 @@ body{
     z-index: 1;
     left: 0;
     top: 0;
-    background-size: 100%;
+    background-size: 200%;
     background-position: 0 0;
-
     opacity: .9;
     animation: pan-image 15s linear infinite;
 }
@@ -341,15 +340,19 @@ body{
     max-width:100%;
     display: inline-block;
     /*margin-bottom: 600px;*/
+
 }
 
 .projectDetailSection_child{
-
+    text-align: justify;
+    text-justify: inter-word;
     max-height:100%;
     max-width:100%;
     height: auto;
-    width: 50%;
+    width: 49%;
     float: left;
+    margin: 0.2em;
+
 }
 .projectDetailSection_child img{
     display: inline-block;
