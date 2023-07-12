@@ -264,7 +264,33 @@ body{
     animation: pan-image 15s linear infinite;
 }
 .card > .card-image2{
-    background-image: url("../assets/images/Bean-Beetle.png");
+    background-image: url("../assets/images/veggieGrowMiniGame1.png");
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-size: 200%;
+    background-position: 0 0;
+    opacity: .9;
+    animation: pan-image 15s linear infinite;
+}
+.card > .card-image3{
+    background-image: url("../assets/images/headEscapeStaff.jpg");
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-size: 200%;
+    background-position: 0 0;
+    opacity: .9;
+    animation: pan-image 15s linear infinite;
+}
+.card > .card-image4{
+    background-image: url("../assets/images/planePilot.gif");
     height: 100%;
     width: 100%;
     position: absolute;
