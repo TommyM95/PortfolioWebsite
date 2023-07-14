@@ -83,8 +83,9 @@ a {
     /*transform: translateY(41rem);*/
 }
 .Showreel {
+    aspect-ratio: 16 / 9;
     width: 100%;
-    height: auto;
+    margin-top: 1rem;
 }
 .Hello{
     font-family: 'Roboto', serif;
